@@ -1,27 +1,14 @@
 import Link from "next/link";
+import Navbar from "../../../components/Navbar";
 
 export default function Menu() {
 
     return(
         <main className="bg-gray-100 min-h-screen w-screen">
   <main className="max-w-screen-2xl m-auto bg-white">
-    {/* NAVBAR */}
-    <nav className="bg-white p-2 flex justify-between">
-      <Link href="/" className="font-bold text-gray-700 text-2xl">
-        {" "} OpenTable{" "}
-      </Link>
-      <div>
-        <div className="flex">
-          <button
-            className="bg-blue-400 text-white border p-1 px-4 rounded mr-3"
-          >
-            Sign in
-          </button>
-          <button className="border p-1 px-4 rounded">Sign up</button>
-        </div>
-      </div>
-    </nav>
-    {/* NAVBAR */} {/* HEADER */}
+    
+    <Navbar/>
+     {/* HEADER */}
     <div className="h-96 overflow-hidden">
       <div
         className="bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] h-full flex justify-center items-center"
@@ -36,8 +23,8 @@ export default function Menu() {
       <div className="bg-white w-[100%] rounded p-3 shadow">
         {/* RESAURANT NAVBAR */}
         <nav className="flex text-reg border-b pb-2">
-          <a href="" className="mr-7"> Overview </a>
-          <a href="" className="mr-7"> Menu </a>
+          <Link href="/restaurant/milestone-grill" className="mr-7"> Overview </Link>
+          <Link href="/restaurant/milestones-grill/menu" className="mr-7"> Menu </Link>
         </nav>
         {/* RESAURANT NAVBAR */} {/* MENU */}
         <main className="bg-white mt-5">
