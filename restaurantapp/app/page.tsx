@@ -1,15 +1,11 @@
 import { Inter } from "@next/font/google";
-
-import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Restaurantcard from "./components/Restaurantcard";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 min-h-screen w-screen">
-      <main className="max-w-screen-2xl m-auto bg-white">
-        <Navbar />
+   
         <main>
           <Header />
 
@@ -17,7 +13,6 @@ export default function Home() {
             <Restaurantcard />
           </div>
         </main>
-      </main>
-    </main>
+     
   );
 }
