@@ -24,7 +24,9 @@ const Restaurantcard = () => {
             </div>
           </div>
           <div className="text-red-600">
-            <a href="">View more information</a>
+            {/* <a href="">View more information</a> */}
+            {/*  this throws an console.error(); */}
+            
           </div>
         </div>
       </Link>
