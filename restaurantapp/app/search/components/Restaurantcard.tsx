@@ -2,7 +2,8 @@ import { Cuisine, PRICE, Location, Review } from "@prisma/client";
 import Link from "next/link";
 import React from "react";
 import Price from "../../components/Price";
-import { calculateReviewAverage } from "../../../utils/calculateReviewAverage";
+import { CalculateReviewAverage } from "../../../utils/CalculateReviewAverage";
+
 interface Restaurant {
   id: number;
   main_image: string;
@@ -17,7 +18,7 @@ interface Restaurant {
 const Restaurantcard = ({restaurant}:{restaurant :Restaurant}) => {
 
   const renderRating = () => {
-    const rating=calculateReviewAverage(restaurant.reviews);
+    const rating=CalculateReviewAverage(restaurant.reviews);
     if (rating >4)
     return "Awesome"
     else if (rating >3)

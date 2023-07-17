@@ -45,7 +45,7 @@ export default async function RestaurantDetails({params}: {params: {slug: string
       <div className="bg-white w-[70%] rounded p-3 shadow">
         <Restaurantnavbar slug ={restaurant.slug}/>
         <Title name={restaurant.name} />
-        <Rating />
+        <Rating reviews ={restaurant.reviews}/>
         <Description description ={restaurant.description}/>
         <Images images={restaurant.images}/>
         <Reviews reviews={restaurant.reviews}/>
