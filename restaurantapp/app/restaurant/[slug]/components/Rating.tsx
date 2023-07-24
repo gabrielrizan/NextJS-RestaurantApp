@@ -1,6 +1,6 @@
 import { Review } from "@prisma/client";
 import React from "react";
-import { CalculateReviewAverage } from "../../../../utils/CalculateReviewAverage";
+import { CalculateReviewAverage } from "../../../../utils/calculateReviewAverage";
 const Rating = ({reviews}: {reviews: Review[]}) => {
   const rating = CalculateReviewAverage(reviews);
 
